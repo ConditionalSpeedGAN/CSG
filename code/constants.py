@@ -7,9 +7,9 @@ MULTI_TEST_DATASET_PATH = ''
 
 CHECKPOINT_NAME = '' #Test
 
-SINGLE_TRAIN_DATASET_PATH = 'single_condition_dataset/eth/train'
-SINGLE_VAL_DATASET_PATH = 'single_condition_dataset/eth/val'
-SINGLE_TEST_DATASET_PATH = 'single_condition_dataset/eth/test'
+SINGLE_TRAIN_DATASET_PATH = 'pedestrian_dataset/eth/train'
+SINGLE_VAL_DATASET_PATH = 'pedestrian_dataset/eth/val'
+SINGLE_TEST_DATASET_PATH = 'pedestrian_dataset/eth/test'
 
 # Activate any one of the following flags
 SINGLE_CONDITIONAL_MODEL = True  # For single condition
