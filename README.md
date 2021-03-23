@@ -17,7 +17,6 @@ Another example depicting our model's control: GT (left) and Min speed (right). 
 - ***For Single agent:***
     - Observed and Predicted length are 8 and 12 frames respectively.
     - Dataset: pedestrian_dataset (in the project folder)
-    - Dataset credits: Social GAN (https://github.com/agrimgupta92/sgan)
     - For extrapolation, use pedestrian_dataset/extrapolation_dataset
 - ***For Multi agent:***
     - Observed and Predicted length are 20 and 30 frames respectively.
