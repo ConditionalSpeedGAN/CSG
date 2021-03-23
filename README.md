@@ -4,19 +4,20 @@ Conditioned Speed GAN (CSG): A generative system that can be conditioned on agen
 
 CSG Model Overview:
 A) Generator Block, comprising of the following sub-modules: (a) Feature Extraction, that encodes the relative positions and speeds of each agent with LSTMs, (b) Aggregation, that jointly reasons multi agent interactions, (c) Speed forecast, that predicts the next timestep speed, (d) Decoder, that conditions on the next timestep speed, agent label and the agent-wise trajectory embedding to forecast next timesteps, and, the B) Discriminator Block, that classifies the generated outputs as “real” or “fake”, specific to the conditions
-![Architecture](./results/arch.png) 
+![Architecture](./figures/arch.png) 
 
 We show an example of agents moving at GT (left) and simulated max speed (right). Given a high speed, each agent intends to increase their speed of motion thus maximising the distance covered.
-![SimulatedPlot1](./results/Real%20and%20Simulated%20Traj%20-%20Max%20Speed.gif)
+![SimulatedPlot1](./figures/Real%20and%20Simulated%20Traj%20-%20Max%20Speed.gif)
 
 Another example depicting our model's control: GT (left) and Min speed (right). Given a speed of 0, agent tend to stop instantaneously.
-![SimulatedPlot1](./results/Real%20vs%20Simulated%20-%20Stop%20ped.gif)
+![SimulatedPlot1](./figures/Real%20vs%20Simulated%20-%20Stop%20ped.gif)
 
 
 ### Datasets:
 - ***For Single agent:***
     - Observed and Predicted length are 8 and 12 frames respectively.
     - Dataset: single_condition_dataset (in the project folder)
+    - Dataset credits: Social GAN (https://github.com/agrimgupta92/sgan)
     - For extrapolation, use single_condition_dataset/extrapolation_dataset
 - ***For Multi agent:***
     - Observed and Predicted length are 20 and 30 frames respectively.
