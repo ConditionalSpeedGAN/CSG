@@ -1,6 +1,6 @@
 # **Conditional Generative Adversarial Networks for Speed Control in TrajectorySimulation**
 
-Conditioned Speed GAN (CSG): A generative system that can be conditioned on agent speed and semantic classes of agents, to simulate multimodal and realistic trajectories based on user defined control.
+Conditional Speed GAN (CSG): A generative system that can be conditioned on agent speed and semantic classes of agents, to simulate multimodal and realistic trajectories based on user defined control.
 
 CSG Model Overview:
 A) Generator Block, comprising of the following sub-modules: (a) Feature Extraction, that encodes the relative positions and speeds of each agent with LSTMs, (b) Aggregation, that jointly reasons multi agent interactions, (c) Speed forecast, that predicts the next timestep speed, (d) Decoder, that conditions on the next timestep speed, agent label and the agent-wise trajectory embedding to forecast next timesteps, and, the B) Discriminator Block, that classifies the generated outputs as “real” or “fake”, specific to the conditions
