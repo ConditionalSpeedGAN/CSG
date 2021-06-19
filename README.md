@@ -27,6 +27,17 @@ Another example depicting our model's control: GT (left) and Min speed (right). 
 - `H_DIM_GENERATOR_SINGLE_CONDITION`, `H_DIM_GENERATOR_MULTI_CONDITION`: hidden dimensions used for both encoder and decoder LSTM in G for single and multi agent respectively
 - `H_DIM_GENERATOR_SINGLE_CONDITION`, `H_DIM_GENERATOR_MULTI_CONDITION`: hidden dimensions used in D for single and multi agent respectively.
 - `EMBEDDING_DIM`: embedding dimension
+
+
+Detailed results of CSG on ETH and UCY dataset are as below:
+ 
+| CSG | ADE/ FDE  |
+|-----|-----|
+| `ETH`| 0.81/ 1.50 |
+| `Hotel`| 0.36/ 0.65 |
+| `Univ`| 0.54/ 1.16 |
+| `Zara1`| 0.36/ 0.76 |
+| `Zara2`| 0.28/ 0.57 |
 - `MLP_INPUT_DIM_SINGLE_CONDITION`, `MLP_INPUT_DIM_MULTI_CONDITION`: input shape of MLP for single and multi agent respectively.
 - `NOISE_DIM`: Gaussian noise dimension
 - `G_LEARNING_RATE`, `D_LEARNING_RATE`: Learning rate of G and D
