@@ -174,7 +174,7 @@ class Preprocessor(Dataset):
                             if any(0.66 <= i <= 1.32 for i in curr_obj_abs_speed):
                                 continue
                         else:
-                            if any(0.66 > i > 1.32 for i in curr_obj_abs_speed):
+                            if any(0.66 > i for i in curr_obj_abs_speed) or any(i > 1.32 for i in curr_obj_abs_speed):
                                 continue
                     elif EXTRAPOLATE_MAX:
                         if train_or_test == 'train' or train_or_test == 'val':
