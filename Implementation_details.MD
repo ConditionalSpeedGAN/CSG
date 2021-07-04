@@ -28,4 +28,4 @@ In discriminator, the encoder LSTM uses 1 hidden layer and 64 hidden dimensions.
 
 We train the GAN and simultaneously train the speed forecaster. During prediction of pedestrians we condition the trajectory decoder with values obtained from the speed forecaster. During multi-agent prediction, we also use the class labels and condition the latent space and the decoder with it. During simulation, we use user defined values as the condition.
 
-The learning rate is set to 0.001 with Adam optimizer and the mode is trained for 50 epochs without aggregation and 100 epochs with aggregation using 16 and 32 as mini batch for single and multi conditions respectively. 
+The learning rate is set to 0.001 with Adam optimizer and the model is trained for 50 epochs for multi condition and 100 epochs for single condition (ETH/UCY dataset) using 16 and 32 as mini batch for single and multi conditions respectively. 
